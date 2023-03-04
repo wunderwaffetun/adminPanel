@@ -1,0 +1,10 @@
+{
+    "db": {
+        "user": "labuser",
+        "host": "localhost",
+        "database": "lab4seq",
+        "password": "root", 
+        "port": 5432,
+        "dialect": "postgres"
+    }
+}

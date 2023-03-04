@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+  border: none !important;
+  border-bottom: 1px solid #9e9e9e !important;
+  box-shadow: none !important;
+} */
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #E4E4E4;
+  border: solid 1px white;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #686868;
+  border: solid 1px white;
+  border-radius: 6px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-presentation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.users-module{ 
+/* Main */
+  width: 80vw;
+  height: 100vh;
+}
+
+main{
+  padding: 10px 0;
+  overflow-y: auto;
+  min-height: calc(100% - 60px);
+  height: calc(100% - 60px);
+}
+
+.auth-form{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 80px;
+}
+
+.name-auth-form{
+  letter-spacing: 1px;
+  font-size: 28px;
+  margin-top: 54px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form-container{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-panel{
+  border: 1px solid #383F51;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 100vh;
+  background-color: #383F51;
+  color: white;
+}
+a{
+  color: inherit;
+}
+.logo{
+  border-top-left-radius: 20px;
+  background-color: #3E4556;
+  padding-left: 22px;
+  width: 100%;
+  height: 60px;
+  font-weight: 700;
+}
+h5{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+.dashboard{
+  padding-top: 14px;
+}
+
+td{
+  text-align: center;
+}
+
+.btn-small, .btn-floating{
+  box-shadow: none;
+  border: 1px solid #DC3545;
+}
+
+.fixed-action-btn.direction-left ul{
+  right: 54%;
+  top: 40%;
+}
+
+.dash-info {
+  font-size: 10px;
+  margin-left: 22px;
+}
+.dash-items{
+  margin-top: 24px;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  font-weight: bold;
+  display:inline-block;
+  clip-path: inset(0 1ch 0 0);
+  animation: pointers 1s steps(10) infinite;
+}
+
+@keyframes pointers {
+  to {
+    clip-path: inset(0 -1ch 0 0)
+  }
+}
+
+.nav-link{
+  margin-left: 0 !important;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  max-width: calc(100% - 20px);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-left: 22px;
+  font-size: 14px;
+}
+
+.nav-text{
+  font-size:max(.6em, min(4em, 1vw));
+}
+
+.nav-active{
+  background-color: #DC3545;
+}
+
+.nav-icons{
+  margin-right: 10px;
+}
+
+
+
+header{ 
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  font-size: 16px;
+  height: 60px;
+  width: 100%;
+  border-bottom: 2px solid #eee;
+}
+.header-name{
+  font-weight: 700;
+}
+
+td,th{
+  text-align: center;
+  vertical-align: middle;
+}
+.first-td{
+  margin-left: 20px;
+}
+
+.table-conteiner{
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+.fixed-action-btn{
+  position: relative;
+  top: 0px;
+  padding: 0;
+  right: 7%;
+}
+.fixed-action-btn.direction-left ul li{
+  margin-top: 0;
+}
+i.icon-red {
+  color: #DC3545;
+}
+
+.btn-white{
+  background-color: white;
+}
+.btn-floating:hover {
+  background-color: #c9c9c9;
+}
+
+.exit{
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.user-auth-info{
+  display: flex;
+  justify-content: space-around;
+  min-width: 50px;
+}
+.btn-red{
+  background-color: #DC3545;
+}
+
+.auth-form{
+  width: 430px;
+  height: auto;
+  padding-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+
+.inputs-field{
+  margin-top: 54px;
+  margin-bottom: 20px;
+}
+
+input{
+  padding-left: 18px;
+  margin-bottom: 10px;
+  border: 1px solid #EEEEEE;
+  border-radius: 6px; 
+  outline: none;
+  width: 100%;
+  height: 38px;
+}
+
+.button-form{
+  height: 40px;
+  width: 100%;
+  background-color: #219DFF;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
