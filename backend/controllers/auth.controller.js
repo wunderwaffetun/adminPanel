@@ -6,7 +6,7 @@ import { tokenInstance } from "../service/token-service.js";
 
 const User = db.user, 
     Role = db.role
-const Op = db.Sequelize.Op // Эта штучка даёт доступ к AND, OR ... и многому другому 
+const Op = db.Sequelize.Op
 
 
 const signIn = ( req, res ) => {
